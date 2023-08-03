@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { StatusBar } from "expo-status-bar";
-import { Button, Image, StyleSheet, Text, View } from "react-native";
+import { Button, Image, StyleSheet, Text, TextInput, View } from "react-native";
 import "expo-dev-client";
 import {
   GoogleSignin,
@@ -65,7 +65,7 @@ export default function App() {
       <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
         <Header />
         <GoogleSigninButton
-          size={GoogleSigninButton.Size.Wide}
+          size={GoogleSigninButton.Size.Standard}
           color={GoogleSigninButton.Color.Dark}
           onPress={onGoogleButtonPress}
         />
