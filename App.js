@@ -65,7 +65,8 @@ export default function App() {
       <View style={{ alignItems: "center", justifyContent: "center", flex: 1 }}>
         <Header />
         <GoogleSigninButton
-          style={{ width: 300, height: 65 }}
+          size={GoogleSigninButton.Size.Wide}
+          color={GoogleSigninButton.Color.Dark}
           onPress={onGoogleButtonPress}
         />
       </View>
